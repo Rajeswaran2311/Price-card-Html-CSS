@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Cards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #id{
+            text-align: center;
+        }
+
+        .pricing-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .pricing-card {
+            border: 1px solid #ccc;
+            width: 300px;
+            height: 400px;
+            padding: 20px;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .pricing-card:hover {
+            transform: scale(1.1);
+        }
+
+        .pricing-card:nth-child(2) {
+            background-color: #f4f4f4;
+        }
+
+        .pricing-card h2 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .pricing-card p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .pricing-card .price {
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        .pricing-card hr {
+            border: 1px solid #ccc;
+        }
+
+        .pricing-card .features {
+            margin: 10px 0;
+        }
+
+        .pricing-card .button-container {
+            text-align: center;
+        }
+
+        .pricing-card .learn-more-button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .pricing-card .learn-more-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="pricing-container">
+        <div class="pricing-card">
+            <h2 id="id" >Basic</h2>
+            <br>
+            <p class="price">$33,333</p>
+            <hr>
+            <br>
+            <div class="features">
+                <p>80 GB Storage</p>
+                <hr>
+                <br>
+                <p>80 GB Bandwidth</p>
+                <hr>
+                <br>
+                <p>80 GB RAM</p>
+                <hr>
+            </div>
+            <br>
+            <div class="button-container">
+                <button class="learn-more-button">Learn More</button>
+            </div>
+        </div>
+        <div class="pricing-card">
+            <h2 id="id">Pro</h2>
+            <br>
+            <p class="price">$66,333</p>
+            <hr>
+            <br>
+            <div class="features">
+                <p>100 GB Storage</p>
+                <hr>
+                <br>
+                <p>100 GB Bandwidth</p>
+                <hr>
+                <br>
+                <p>100 GB RAM</p>
+                <hr>
+            </div>
+            <br>
+            <div class="button-container">
+                <button class="learn-more-button">Learn More</button>
+            </div>
+        </div>
+        <div class="pricing-card">
+            <h2 id="id">Premium</h2>
+            <br>
+            <p class="price">$88,333</p>
+            <hr>
+            <br>
+            <div class="features">
+                <p>120 GB Storage</p>
+                <hr>
+                <br>
+                <p>120 GB Bandwidth</p>
+                <hr>
+                <br>
+                <p>120 GB RAM</p>
+                <hr>
+            </div>
+            <br>
+            <div class="button-container">
+                <button class="learn-more-button">Learn More</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
